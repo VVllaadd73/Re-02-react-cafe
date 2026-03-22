@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export default function App() {
 
-   const [votes, setVotesState] = useState<Votes>({good: 0, neutral: 0, bad: 10});
+   const [votes, setVotesState] = useState<Votes>({good: 0, neutral: 0, bad: 0});
 
    const handleVotes = (type: keyof Votes) => {
       setVotesState(prevVotes => ({

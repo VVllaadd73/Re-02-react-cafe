@@ -11,10 +11,10 @@ export default function App() {
 
    const [votes, setVotesState] = useState<Votes>({good: 0, neutral: 0, bad: 0});
 
-   const handleVotes = (type: keyof Votes) => {
+   const handleVotes = (key: keyof Votes) => {
       setVotesState(prevVotes => ({
          ...prevVotes,
-         [type]: prevVotes[type] + 1
+         [key]: prevVotes[key] + 1
       }));
    };
 

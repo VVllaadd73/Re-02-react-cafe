@@ -28,5 +28,5 @@ export default function App() {
          <VoteOptions votes={votes} onVotes={handleVotes} resetVotes={resetVotes} />
          <VoteStats votes={votes} />
       </div>
-   )
+   );
 };
